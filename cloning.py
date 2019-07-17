@@ -1,5 +1,6 @@
 import requests, json, sys, hashlib, mechanize
-from bs4 import BeautifulSoup, os import system
+from bs4 import BeautifulSoup
+from os import system
 system("clear")
 class YC:
     def __init__(self, email, pw):
