@@ -13,7 +13,7 @@ class YC:
             print ("\033[36m|" + 11*" " + "\033[35mEmail" + 11*" " + "\033[36m|" + 8*" " + "\033[33mVuln" + 8*" " + "\033[36m|")
             print ("\033[36m" + 50*"-")
         except KeyError:
-            print ("\033[31m[\033[31m!\033[31m] \033[39mLogin Gagal")
+            print ("\033[31m[\033[31m!\033[31m] \033[39mLogin Error")
             sys.exit()
         self.__looping(json.loads(requests.get("https://graph.facebook.com/me/friends?access_token={self.token}").text))
     def __looping(self, dataFL):
