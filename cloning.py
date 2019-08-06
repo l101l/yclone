@@ -1,5 +1,5 @@
 import requests, json, sys, hashlib, mechanize
-from bs4 import BeautifulSoup
+
 from os import system
 system("clear")
 class YC:
