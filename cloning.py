@@ -15,7 +15,7 @@ class YC:
         except KeyError:
             print ("\033[31m[\033[31m!\033[31m] \033[39mLogin Gagal")
             sys.exit()
-        self.__looping(json.loads(requests.get(f"https://graph.facebook.com/me/friends?access_token={self.token}").text))
+        self.__looping(json.loads(requests.get("https://graph.facebook.com/me/friends?access_token={self.token}").text))
     def __looping(self, dataFL):
         br = mechanize.Browser()
         br.set_handle_robots(False)
