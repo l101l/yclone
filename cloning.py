@@ -8,7 +8,7 @@ class YC:
         self.pw = pw
         try:
             self.token = self.__getToken()['access_token']
-            print ("\033[31m[\033[32m!\033[31m] \033[39mLogin Berhasil")
+            print ("\033[31m[\033[32m!\033[31m] \033[39mLogin Successful!")
             print ("\033[36m" + 50*"-")
             print ("\033[36m|" + 11*" " + "\033[35mEmail" + 11*" " + "\033[36m|" + 8*" " + "\033[33mVuln" + 8*" " + "\033[36m|")
             print ("\033[36m" + 50*"-")
